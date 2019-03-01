@@ -1,0 +1,79 @@
+#include <iostream>
+#include <conio.h>
+
+main ()
+{
+	float opnt,opr1,opr2,rtd;
+	
+	printf("\n Selecione a Operacao Desejada!");
+	printf("\n 1 - Adicao");
+	printf("\n 2 - Subtracao");
+	printf("\n 3 - Multiplicacao");
+	printf("\n 4 - Divisao");
+	printf("\n 5 - Sair\n");
+	scanf ("%f",&opnt);
+	// OPERAÇÕES //
+	// ADIÇÃO  //
+	if (opnt == 1)
+	{
+		printf("\n ADICAO!");
+		printf("\n Digite o Primeiro Numero!\n");
+		scanf ("%f",&opr1);
+		printf("\n Digite o Segundo Numero!\n");
+		scanf ("%f",&opr2);
+		rtd = opr1 + opr2;
+		printf ("\n Resultado: %f\n",rtd);
+		main();
+	}
+	// SUBTRACAO  //
+	else
+	if (opnt == 2)
+	{
+		printf("\n SUBTRACAO!");
+		printf("\n Digite o Primeiro Numero!\n");
+		scanf ("%f",&opr1);
+		printf("\n Digite o Segundo Numero!\n");
+		scanf ("%f",&opr2);
+		rtd = opr1 - opr2;
+		printf ("\n Resultado: %f",rtd);
+		main();
+	}
+	// MULTIPLICACAO  //
+	else
+	if (opnt == 3)
+	{
+		printf("\n MULTIPLICACAO!");
+		printf("\n Digite o Primeiro Numero!\n");
+		scanf ("%f",&opr1);
+		printf("\n Digite o Segundo Numero!\n");
+		scanf ("%f",&opr2);
+		rtd = opr1 * opr2;
+		printf ("\n Resultado: %f",rtd);
+		main();
+	}
+	// DIVISAO  //
+	else
+	if (opnt == 4)
+	{
+		printf("\n DIVISAO!");
+		printf("\n Digite o Primeiro Numero!\n");
+		scanf ("%f",&opr1);
+		printf("\n Digite o Segundo Numero!\n");
+		scanf ("%f",&opr2);
+		rtd = opr1 / opr2;
+		printf ("\n Resultado: %f",rtd);
+		main();
+	}
+	// * //
+	else
+	if (opnt == 5)
+	{
+		printf("\n FINALIZADO!\n");
+	}
+	else
+	if (opnt >= 6)
+	{
+		printf("\n OPCAO INVALIDA\n");
+		main();
+	}
+}
